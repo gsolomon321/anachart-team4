@@ -9,16 +9,16 @@ We conducted visual analysis and a two-sample Welch’s t-test to compare averag
 
 ### II. Basic Steps: 
 
-1. Problem Framing & Data Planning: We formulated a research question examining whether analyst rating changes (upgrades and downgrades) are associated with differences in subsequent stock returns. Five large-cap consumer retail firms were selected for analysis (Starbucks, Lululemon, Ross, Amazon, and Costco). Data requirements were identified – including the dataframes extracted from the AnaChart dataset, adjusted closing stock prices in Yahoo Finance’s historical data, and formulas for calculations.
-2. Data Collection & Cleaning: Analyst actions were classified into upgrades, downgrades, and no-change events. Observations with no rating change and duplicate entries were removed. Adjusted closing price data were then obtained from Yahoo Finance. For each upgrade and downgrade event, 30-day stock returns were calculated using adjusted prices at the event date (t=0) and 30 days after the event (t=30).
-3. Exploratory Data Analysis & Statistical Methods: Visualizations including stacked bar charts and box plots were generated to explore patterns in returns following analyst rating changes. Summary statistics were computed for both 5-day and 30-day returns. A two-sample Welch’s t-test was conducted to compare mean returns following upgrades and downgrades, accounting for unequal variances across groups. The analysis indicates that average returns following downgrades exceeded those following upgrades, with the difference being statistically significant.
-4. Presentation & Documentation: Final visualizations were prepared, and results were compiled into a presentation and written report. A structured project repository was created to document data sources, code, and outputs.
+1. **Problem Framing & Data Planning:** We formulated a research question examining whether analyst rating changes (upgrades and downgrades) are associated with differences in subsequent stock returns. Five large-cap consumer retail firms were selected for analysis (Starbucks, Lululemon, Ross, Amazon, and Costco). Data requirements were identified – including the dataframes extracted from the AnaChart dataset, adjusted closing stock prices in Yahoo Finance’s historical data, and formulas for calculations.
+2. **Data Collection & Cleaning:** Analyst actions were classified into upgrades, downgrades, and no-change events. Observations with no rating change and duplicate entries were removed. Adjusted closing price data were then obtained from Yahoo Finance. For each upgrade and downgrade event, 30-day stock returns were calculated using adjusted prices at the event date (t=0) and 30 days after the event (t=30).
+3. **Exploratory Data Analysis & Statistical Methods:** Visualizations including stacked bar charts and box plots were generated to explore patterns in returns following analyst rating changes. Summary statistics were computed for both 5-day and 30-day returns. A two-sample Welch’s t-test was conducted to compare mean returns following upgrades and downgrades, accounting for unequal variances across groups. The analysis indicates that average returns following downgrades exceeded those following upgrades, with the difference being statistically significant.
+4. **Presentation & Documentation:** Final visualizations were prepared, and results were compiled into a presentation and written report. A structured project repository was created to document data sources, code, and outputs.
 
 
 ### III. Data Analysis and Visualizations:
 ![Stacked bar of 30-day Returns](stacked_bar_chart.png)
-Upgrade Chart: Most upgrades come from Hold → Buy not Sell → Buy , suggesting that analysts prefer incremental changes rather than sharp shifts. 
-Downgrade Chart:  Most downgrades come from Buy → Hold not Buy → Sell, reflecting cautious approach with analysts moderating views before choosing a bearish stance.
+**Upgrade Chart:** Most upgrades come from Hold → Buy not Sell → Buy , suggesting that analysts prefer incremental changes rather than sharp shifts. 
+**Downgrade Chart:** Most downgrades come from Buy → Hold not Buy → Sell, reflecting cautious approach with analysts moderating views before choosing a bearish stance.
 
 ![Boxplot of 30-day Returns](boxplot.png)
 This box plot shows the entire distribution highlighting: median performance, volatility, skewness, and outliers.
