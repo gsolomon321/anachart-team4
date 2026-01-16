@@ -18,13 +18,13 @@ We conducted visual analysis and a two-sample Welch’s t-test to compare averag
 ### III. Data Analysis and Visualizations:
 **Figure A:**
 ![Stacked bar of 30-day Returns](stacked_bar_chart.png)
-**Figure A Description**
+**Figure A Description:**
 **Upgrade Chart:** Most upgrades come from Hold → Buy not Sell → Buy , suggesting that analysts prefer incremental changes rather than sharp shifts. 
 **Downgrade Chart:** Most downgrades come from Buy → Hold not Buy → Sell, reflecting cautious approach with analysts moderating views before choosing a bearish stance.
 
 **Figure B**
 ![Boxplot of 30-day Returns](boxplot.png)
-**Figure B Description**
+**Figure B Description:**
 This box plot shows the entire distribution highlighting: median performance, volatility, skewness, and outliers.
 For upgrade, the median return is modest--the median line sits slightly above 0%, around 1-2%. Returns are also more clustered with the IQR relatively short from around -5% to +6%. The minimum and maximum values are closer together than for downgrades. There are very few dots above the upper whisker as well as no extreme gains like +20% or +40%.
 There is wider dispersion for downgrade. This includes the downgrade box being taller than the upgrade box. The IQR spans a broader range around 0% to 8% with longer whiskers. Additionally, the boxplot shows the presence of large positive and negative outliers. There are also extreme dots around +20% to +40% and a large negative outlier at around-12%. Longer whiskers, more and farther outliers, and wider overall range suggests higher uncertainty and volatility.
